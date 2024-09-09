@@ -2,7 +2,7 @@ import React from 'react'
 
 const AddItems = ({addItems, setAddItems, handleAddItems}) => {
   return (
-    <form onSubmit={handleAddItems}> 
+    <form className="addItems" onSubmit={handleAddItems}> 
         <label htmlFor="AddItems">Add Items</label>
         <input 
         type="text" 
