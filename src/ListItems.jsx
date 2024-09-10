@@ -3,7 +3,7 @@ import LineItems from './LineItems'
 
 const ListItems = ({ items, handleCheck, handleDelete }) => {
     return (
-        <ul>
+        <ul className='unlist'>
             {items.map(
                 item => (
                     <LineItems

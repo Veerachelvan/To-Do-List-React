@@ -1,27 +1,21 @@
 import React from 'react'
-import { useRef } from 'react';
 
 
-const AddItems = ({ addItems, setAddItems, handleAddItems }) => {
-
-  const inputRef = useRef()
-
+const AddItems = ({addItems, setAddItems, handleAddItems}) => {
   return (
-    <form className="addItems" onSubmit={handleAddItems}>
-      <label htmlFor="AddItems">Add Items</label>
-      <input
-        type="text"
-        ref={inputRef}
+    <form className="addItems" onSubmit={handleAddItems}> 
+        <label htmlFor="AddItems">Add Items</label>
+        <input 
+        type="text" 
         placeholder='Add Items'
         required
         value={addItems}
-        onChange={(e) => setAddItems(e.target.value)}
-      />
-      <button
+        onChange={(e)=>setAddItems(e.target.value)}
+        />
+        <button
         type='submit'
-        onClick={() => inputRef.current.focus()}
-      >+
-      </button>
+        >+
+        </button>
     </form>
   )
 }

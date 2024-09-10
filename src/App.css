@@ -3,22 +3,41 @@
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+  align-items: center;
+}
+.head{
+  top: 0%;
+  display: flex;
+  position: fixed;
 }
 
+.head img{
+  height: 1em;
+  justify-content: space-between;
+  padding: 0 20px;
+  width: 1em;
+}
+.addItems{
+  display: flex;
+  height: 40px;
+}
 .addItems label {
   position: absolute;
   left: -99999px;
 }
 
 .addItems input {
-  border-radius: 10px;
+  border-radius: 10px 0 0 10px;
+  width: 17vw;
   padding: 10px;
 }
 
 .addItems button {
-  border-radius: 8px;
+  border-radius: 0 10px 10px 0;
+  width: 50px;
+  justify-content: space-between;
   border: 1px solid transparent;
-  padding: 0.6em 1.2em;
+  align-items: center;
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
@@ -33,6 +52,45 @@
 }
 
 .searchItems input {
-  border-radius: 10px;
+  border-radius: 10px 0 0 10px;
+  width: 17vw;
   padding: 10px;
+}
+.searchItems button {
+  border-radius: 0 10px 10px 0;
+  width: 50px;
+  height: 40px;
+  justify-content: space-between;
+  border: 1px solid transparent;
+  align-items: center;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+
+ul{
+  list-style: none;
+  padding: 0 10px;
+}
+
+.items{
+  display: flex;
+  justify-content: space-between;
+}
+footer{
+  position: fixed;
+  bottom: 0%;
+  margin: 0 80px;
+  padding: 30px;
+  text-align: center;
+  align-items: center;
+
+}
+
+footer .icon a{
+  justify-content: space-between;
+  margin-left: 10px;
 }
