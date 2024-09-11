@@ -5,7 +5,7 @@ import { MdPhoneIphone } from "react-icons/md";
 
 const Footer = ({ length }) => {
     return (
-        <footer>
+        <footer className='foot'>
             {length} {length == 1 ? "Task " : "Tasks"} Left
             <br />
             <div className='icon'>

@@ -1,5 +1,4 @@
 import React from 'react'
-import { FaSearch } from 'react-icons/fa'
 
 
 const SearchItems = ({ search, setSearch }) => {
@@ -14,10 +13,7 @@ const SearchItems = ({ search, setSearch }) => {
             value={search}
             onChange={(e) => setSearch(e.target.value)}
             />
-            <button
-            type='submit'
-            ><FaSearch />
-            </button>
+    
             
         </form>
     )
