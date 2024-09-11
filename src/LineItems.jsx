@@ -13,7 +13,7 @@ const LineItems = ({item, handleCheck, handleDelete}) => {
                     />
                 <label onDoubleClick={() => handleCheck(item.id)} style={(item.checked) ? { textDecoration: "line-through" } : null}>{item.task}</label>
             </div>
-            <TbTrashXFilled
+            <TbTrashXFilled className='on'
             role="button"
             onClick={() => handleDelete(item.id)}
             tabIndex="0"

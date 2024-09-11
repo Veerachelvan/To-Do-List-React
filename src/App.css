@@ -20,6 +20,7 @@
 .addItems{
   display: flex;
   height: 40px;
+  
 }
 .addItems label {
   position: absolute;
@@ -45,6 +46,9 @@
   cursor: pointer;
   transition: border-color 0.25s;
 }
+.addItems button:hover{
+  border: 2px solid rgb(0, 102, 255);
+}
 
 .searchItems label {
   position: absolute;
@@ -53,8 +57,9 @@
 
 .searchItems input {
   border-radius: 10px;
-  width: 21vw;
+  width: 280px;
   padding: 10px;
+
   
 }
 
@@ -77,10 +82,22 @@ li label{
   font-size: 20px;
   margin-left: 5px;
 }
-
+.on{
+  top: 10px;
+  font-size: 30px;
+  cursor: pointer;
+}
+.on:hover{
+  color: rgb(0, 102, 255);
+  
+}
 .items{
   display: flex;
   justify-content: space-between;
+}
+.items input{
+  height: 15px;
+  width: 15px;
 }
 .foot{
   position: absolute;
