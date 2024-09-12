@@ -5,7 +5,7 @@ const Content = ({items, handleCheck, handleDelete}) => {
     
 
     return (
-        <main>
+        <main className="main">
             {(items.length) ? (
                     <ListItems 
                     items={items}

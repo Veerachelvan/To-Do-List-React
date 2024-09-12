@@ -17,6 +17,7 @@
   padding: 0 20px;
   width: 1em;
 }
+
 .addItems{
   display: flex;
   height: 40px;
@@ -28,16 +29,28 @@
 }
 
 .addItems input {
-  border-radius: 10px 0 0 10px;
-  width: 17vw;
+  border-radius: 10px;
+  border: 2px solid transparent;
+  border-color: none;
+  width: 230px;
   padding: 10px;
+  transition: border-color 0.25s;
+}
+.addItems input:hover{
+  border: 2px solid gray;
+}
+
+.addItems input:focus{
+  border: 2px solid rgb(0, 102, 255);
+  outline: none;
 }
 
 .addItems button {
-  border-radius: 0 10px 10px 0;
+  border-radius: 10px;
   width: 50px;
+  margin-left: 1px;
   justify-content: space-between;
-  border: 1px solid transparent;
+  border: 2px solid transparent;
   align-items: center;
   font-size: 1em;
   font-weight: 500;
@@ -46,8 +59,13 @@
   cursor: pointer;
   transition: border-color 0.25s;
 }
+
 .addItems button:hover{
-  border: 2px solid rgb(0, 102, 255);
+  border: 2px solid gray;
+}
+
+.addItems button:active{
+  border: 2px solid blue;
 }
 
 .searchItems label {
@@ -57,10 +75,20 @@
 
 .searchItems input {
   border-radius: 10px;
-  width: 280px;
-  padding: 10px;
+  border: 2px solid transparent;
+  width: 282px;
+  margin-top: 10px;
+  padding: 10px; 
+  transition: border-color 0.25s;
+}
 
-  
+.searchItems input:hover{
+  border: 2px solid gray;
+}
+
+.searchItems input:focus{
+  border: 2px solid rgb(0, 102, 255);
+  outline: none;
 }
 
 ul{
@@ -88,12 +116,13 @@ li label{
   cursor: pointer;
 }
 .on:hover{
-  color: rgb(0, 102, 255);
+  color: red;
   
 }
 .items{
   display: flex;
   justify-content: space-between;
+  width: 280px;
 }
 .items input{
   height: 15px;

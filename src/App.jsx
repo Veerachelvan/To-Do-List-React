@@ -10,7 +10,7 @@ import Footer from './Footer';
 
 function App() {
 
-  const [items, setItems] = useState(JSON.parse(localStorage.getItem('to-do list')));
+  const [items, setItems] = useState(JSON.parse(localStorage.getItem('to-do list'))||[]);
 
   const [addItems, setAddItems] = useState('')
 
