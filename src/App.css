@@ -93,13 +93,23 @@
 
 ul{
   position: fixed;
-  height: 190px;
-  width: 290px;
+  height: 328px;
+  width: 310px;
   list-style: none;
-  padding: 0 10px;
+  padding: 0 3px;
   overflow: hidden;
   overflow-y: scroll;
-  
+}
+ul::-webkit-scrollbar{
+  width: 10px;
+}
+ul::-webkit-scrollbar-thumb{
+  background-color: rgb(68, 70, 71);
+  border-radius: 10px;
+  cursor: pointer;
+}
+ul::-webkit-scrollbar-thumb:hover{
+  background-color: rgb(95, 95, 95);
 }
 li label{
   background-color: aliceblue;
@@ -110,6 +120,7 @@ li label{
   font-size: 20px;
   margin-left: 5px;
 }
+
 .on{
   top: 10px;
   font-size: 30px;
@@ -125,13 +136,16 @@ li label{
   width: 280px;
 }
 .items input{
-  height: 15px;
-  width: 15px;
+  height: 20px;
+  width: 20px;
 }
 .foot{
-  position: absolute;
-  bottom: 0%;
+  position: fixed;
+  bottom: 0;
+  margin-bottom: 0;
+  top: 380px;
   margin: 0 80px;
+  margin-top: 10rem;
   padding: 30px;
   text-align: center;
   align-items: center;

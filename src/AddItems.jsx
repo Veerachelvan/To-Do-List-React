@@ -1,5 +1,6 @@
 import React from 'react'
 import { useRef } from 'react'
+import { GrAddCircle } from 'react-icons/gr'
 
 
 const AddItems = ({addItems, setAddItems, handleAddItems}) => {
@@ -18,7 +19,7 @@ const AddItems = ({addItems, setAddItems, handleAddItems}) => {
         <button
         type='submit'
         onClick={()=>inputRef.current.focus()}
-        >+
+        ><GrAddCircle />
         </button>
     </form>
   )
