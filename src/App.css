@@ -8,7 +8,7 @@
 .head{
   top: 0%;
   display: flex;
-  position: fixed;
+  position: relative;
 }
 
 .head img{
@@ -68,6 +68,10 @@
   border: 2px solid blue;
 }
 
+.searchItems{
+  display: flex;
+}
+
 .searchItems label {
   position: absolute;
   left: -99999px;
@@ -92,7 +96,7 @@
 }
 
 ul{
-  position: fixed;
+  position: relative;
   height: 328px;
   width: 310px;
   list-style: none;
@@ -141,7 +145,7 @@ li label{
   accent-color: rgb(143, 18, 132);
 }
 .foot{
-  position: fixed;
+  position: relative;
   bottom: 0;
   margin-bottom: 0;
   top: 380px;
@@ -156,4 +160,29 @@ li label{
 .foot .icon a{
   justify-content: space-between;
   margin-left: 10px;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+
+  .head{
+    top: 0%;
+    display: flex;
+    position: relative;
+  }
+
+  ul {
+    position: relative;
+    height: 328px;
+    width: 310px;
+    list-style: none;
+    padding: 0 3px;
+    overflow: hidden;
+    overflow-y: scroll;
+  }
+
+  .foot {
+    position: relative;
+    padding: 20px 10px;
+  }
 }
