@@ -97,12 +97,9 @@
 
 ul{
   position: relative;
-  height: 328px;
   width: 310px;
   list-style: none;
   padding: 0 3px;
-  overflow: hidden;
-  overflow-y: scroll;
 }
 ul::-webkit-scrollbar{
   width: 10px;
@@ -148,9 +145,7 @@ li label{
   position: relative;
   bottom: 0;
   margin-bottom: 0;
-  top: 380px;
   margin: 0 80px;
-  margin-top: 10rem;
   padding: 30px;
   text-align: center;
   align-items: center;
