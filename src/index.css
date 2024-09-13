@@ -16,7 +16,7 @@
 body {
   margin: 0;
   display: flex;
-  /* padding-top: 100px; */
+  padding-top: 100px;
   min-width: 320px;
   /* min-height: 100vh; */
 }
