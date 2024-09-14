@@ -5,7 +5,8 @@
   text-align: center;
   align-items: center;
 }
-.head{
+
+.head {
   top: 0%;
   display: flex;
   position: fixed;
@@ -13,18 +14,19 @@
   z-index: 1;
 }
 
-.head img{
+.head img {
   height: 1em;
   justify-content: space-between;
   padding: 0 20px;
   width: 1em;
 }
 
-.addItems{
+.addItems {
   display: flex;
   height: 40px;
-  
+
 }
+
 .addItems label {
   position: absolute;
   left: -99999px;
@@ -38,11 +40,12 @@
   padding: 10px;
   transition: border-color 0.25s;
 }
-.addItems input:hover{
+
+.addItems input:hover {
   border: 2px solid gray;
 }
 
-.addItems input:focus{
+.addItems input:focus {
   border: 2px solid rgb(0, 102, 255);
   outline: none;
 }
@@ -62,15 +65,15 @@
   transition: border-color 0.25s;
 }
 
-.addItems button:hover{
+.addItems button:hover {
   border: 2px solid gray;
 }
 
-.addItems button:active{
+.addItems button:active {
   border: 2px solid blue;
 }
 
-.searchItems{
+.searchItems {
   display: flex;
 }
 
@@ -84,41 +87,45 @@
   border: 2px solid transparent;
   width: 282px;
   margin-top: 10px;
-  padding: 10px; 
+  padding: 10px;
   transition: border-color 0.25s;
 }
 
-.searchItems input:hover{
+.searchItems input:hover {
   border: 2px solid gray;
 }
 
-.searchItems input:focus{
+.searchItems input:focus {
   border: 2px solid rgb(0, 102, 255);
   outline: none;
 }
 
-ul{
+ul {
   position: relative;
   width: 310px;
   /* height: 328px; */
   list-style: none;
   padding: 0 3px;
+  padding-bottom: 8px;
   overflow: hidden;
   overflow-y: scroll;
 }
 
-ul::-webkit-scrollbar{
+ul::-webkit-scrollbar {
   width: 10px;
 }
-ul::-webkit-scrollbar-thumb{
+
+ul::-webkit-scrollbar-thumb {
   background-color: rgb(68, 70, 71);
   border-radius: 10px;
   cursor: pointer;
 }
-ul::-webkit-scrollbar-thumb:hover{
+
+ul::-webkit-scrollbar-thumb:hover {
   background-color: rgb(95, 95, 95);
 }
-li label{
+
+li label {
   background-color: aliceblue;
   color: #000;
   border-radius: 2rem;
@@ -128,37 +135,42 @@ li label{
   margin-left: 5px;
 }
 
-.on{
+.on {
   top: 10px;
   font-size: 30px;
   cursor: pointer;
 }
-.on:hover{
+
+.on:hover {
   color: red;
-  
+
 }
-.items{
+
+.items {
   display: flex;
   justify-content: space-between;
   width: 280px;
 }
-.items input{
+
+.items input {
   height: 20px;
   width: 20px;
   accent-color: rgb(143, 18, 132);
 }
-.foot{
-  position: relative;
+
+.foot {
+  position: fixed;
   bottom: 0;
+  width: 310px;
   margin-bottom: 0;
-  margin: 0 80px;
-  padding: 30px;
+  margin-top: 10;
   text-align: center;
   align-items: center;
+  background-color: #242424;
 
 }
 
-.foot .icon a{
+.foot .icon a {
   justify-content: space-between;
   margin-left: 10px;
 }
@@ -166,7 +178,7 @@ li label{
 /* Responsive styling */
 @media (max-width: 768px) {
 
-  .head{
+  .head {
     top: 0%;
     display: flex;
     position: fixed;
@@ -180,16 +192,15 @@ li label{
 
   ul {
     position: relative;
-    height: 328px;
     width: 310px;
     list-style: none;
     padding: 0 3px;
+    padding-bottom: 8px;
     overflow: hidden;
     overflow-y: scroll;
   }
 
   .foot {
-    position: relative;
-    padding: 20px 10px;
+    position: fixed;
   }
 }
